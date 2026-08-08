@@ -4,13 +4,7 @@ const path = require("path");
 // --- Vercel Build Trick ---
 // ADD your PDF file here to ensure it's included in the deployment.
 try {
-  fs.readFileSync(path.join(__dirname, 'unhcr.png'));
-  fs.readFileSync(path.join(__dirname, 'milestone.png'));
-  fs.readFileSync(path.join(__dirname, 'pixel.png'));
-  fs.readFileSync(path.join(__dirname, 'cardEng.png'));
-   fs.readFileSync(path.join(__dirname, 'july.png'));
-   fs.readFileSync(path.join(__dirname, 'electionManifesto.png'));
-  fs.readFileSync(path.join(__dirname, 'conferenceBooklet.pdf')); // ADDED: Your new PDF file
+  fs.readFileSync(path.join(__dirname, 'july two year.png'));
 } catch (e) {
   // This block might show an error in a local terminal, which is okay.
 }
@@ -26,21 +20,7 @@ const supabase = createClient(
 
 // CHANGED: Renamed to fileConfig to handle any file type
 const fileConfig = {
-  unhcr: "unhcr.png",
-  milestone: "milestone.png",
-  pixel: "pixel.png",
-  usaTarif: "USA_tarif.png",
-  auguest: 'Auguest.png',
-  failureGovt: 'FailureGovt.png',
-  onePixel: 'onePixel.png',
-  inviteCard: 'cardEng.png',
-  invitationPr: 'invitation_pr.png',
-  report: 'conferenceBooklet.pdf', // ADDED: A key for your PDF
-  army: 'army.png',
-  sanod: 'JulySanod.png',
-  july: 'july.png',
-  election: 'election.png',
-  electionManifesto: 'electionManifesto.png',
+  july: "july two year.png",
 };
 
 // Use a fallback image if the type is invalid
