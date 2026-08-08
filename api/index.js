@@ -2,8 +2,8 @@ const { createClient } = require("@supabase/supabase-js");
 
 // Your Supabase credentials
 const supabase = createClient(
-    "https://khvjvzshyhfoookboaqf.supabase.co", 
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtodmp2enNoeWhmb29va2JvYXFmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2OTIyNzIsImV4cCI6MjA2NjI2ODI3Mn0.FdOwlFP05seSbF69ErbFOyM3uO37Rul9vaLCX7bu0tg"
+    "https://tgdahcqseukfivaziawp.supabase.co", 
+    "sb_publishable_i7KTuyb38JPLkfdCdDbcMw_WrtFdfoz"
 );
 
 /**
@@ -54,46 +54,12 @@ module.exports = async (req, res) => {
 
     // 2. Define your campaigns with a new 'baseOpens' property
     const campaignConfig = {
-        unhcr: {
-            displayName: "UNHCR Campaign",
-            totalSent: 7209,
-            baseOpens: 563 // <-- Add your default number here
+        july: {
+            displayName: "July Two Year",
+            totalSent: 1500,
+            baseOpens: 1 // <-- Add your default number here
         },
-        milestone: {
-            displayName: "Mileston Campaign",
-            totalSent: 1490,
-            baseOpens: 411 // <-- Add your default number here
-        },
-        usaTarif: {
-            displayName: "USA tarif Campaign",
-            totalSent: 7500,
-            baseOpens: 406 // <-- Add your default number here
-        },
-        auguest:{
-            displayName: "5 auguest, july declaration",
-            totalSent: 3000,
-            baseOpens: 47 // <-- Add your default number here
-        },
-         failureGovt:{
-            displayName: "Hope in current govt",
-            totalSent: 4500,
-            baseOpens: 20 // You can set it to 0 if none
-        },
-        inviteCard:{
-            displayName: "Bangladesh 2.0 Invite Card",
-            totalSent: 4872,
-            baseOpens: 0 // You can set it to 0 if none
-        },
-        invitationPr:{
-            displayName: "Bangladesh 2.0 Invite PR",
-            totalSent: 2805,
-            baseOpens: 0 // You can set it to 0 if none
-        },
-        electionManifesto:{
-            displayName: "Election Menifesto",
-            totalSent: 500,
-            baseOpens: 0 // You can set it to 0 if none
-        },
+       
     };
 
     // --- DATA PROCESSING ---
