@@ -20,8 +20,8 @@ try {
 const { createClient } = require("@supabase/supabase-js");
 
 const supabase = createClient(
-  "https://khvjvzshyhfoookboaqf.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtodmp2enNoeWhmb29va2JvYXFmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2OTIyNzIsImV4cCI6MjA2NjI2ODI3Mn0.FdOwlFP05seSbF69ErbFOyM3uO37Rul9vaLCX7bu0tg"
+  "https://tgdahcqseukfivaziawp.supabase.co",
+  "sb_publishable_i7KTuyb38JPLkfdCdDbcMw_WrtFdfoz"
 );
 
 // CHANGED: Renamed to fileConfig to handle any file type
