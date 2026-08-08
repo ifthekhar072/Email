@@ -15,7 +15,7 @@ const { createClient } = require("@supabase/supabase-js");
 
 const supabase = createClient(
   "https://tgdahcqseukfivaziawp.supabase.co",
-  "sb_publishable_i7KTuyb38JPLkfdCdDbcMw_WrtFdfoz"
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRnZGFoY3FzZXVrZml2YXppYXdwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYxOTIxNzYsImV4cCI6MjEwMTc2ODE3Nn0.H3ptyXobZxbcAuj2vUU6DCVPpjgSTFZBoJ88FUft6Ag"
 );
 
 // CHANGED: Renamed to fileConfig to handle any file type
