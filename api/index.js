@@ -3,7 +3,7 @@ const { createClient } = require("@supabase/supabase-js");
 // Your Supabase credentials
 const supabase = createClient(
     "https://tgdahcqseukfivaziawp.supabase.co", 
-    "sb_publishable_i7KTuyb38JPLkfdCdDbcMw_WrtFdfoz"
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRnZGFoY3FzZXVrZml2YXppYXdwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYxOTIxNzYsImV4cCI6MjEwMTc2ODE3Nn0.H3ptyXobZxbcAuj2vUU6DCVPpjgSTFZBoJ88FUft6Ag"
 );
 
 /**
@@ -54,11 +54,12 @@ module.exports = async (req, res) => {
 
     // 2. Define your campaigns with a new 'baseOpens' property
     const campaignConfig = {
-        unhcr: {
-            displayName: "UNHCR Campaign",
-            totalSent: 7209,
-            baseOpens: 563 // <-- Add your default number here
+        july: {
+            displayName: "July Two Year",
+            totalSent: 1500,
+            baseOpens: 1 // <-- Add your default number here
         },
+       
     };
 
     // --- DATA PROCESSING ---
